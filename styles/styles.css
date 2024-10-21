@@ -1,0 +1,73 @@
+/* Inter google font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Updock google font */
+@import url('https://fonts.googleapis.com/css2?family=Updock&display=swap');
+
+/* Universal styles */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", serif;
+}
+/* --------------------------------- */
+
+/* shared styles */
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.font-updock{
+    font-family: "Updock", cursive;
+}
+/* ----------------------------------- */
+
+/* Header styles */
+header{
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+}
+
+
+/* navbar styles */
+nav{
+    color: white;
+    background-color: #333;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logo{
+    color: #E6533C;
+    font-weight: bolder;
+    font-size: 2em;
+}
+.nav-lists{
+    gap: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 8px;
+    border-radius: 20px;
+}
+.list-items{
+    list-style: none;
+}
+#hamburger{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 576px) {
+    nav{
+        justify-content: space-between;
+    }
+    .nav-lists{
+        display: none;
+    }
+    #hamburger{
+        display: block;
+    }
+}
