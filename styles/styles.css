@@ -330,6 +330,25 @@ main{
     width: 100%;
     padding-top: 2rem;
   }
+  .plans-container{
+    display: grid;
+    grid-template-columns: repeat(3,  1fr);
+    gap: 3rem;
+  }
+  .plans-container li{
+    list-style: none;
+  }
+  .plans-container h3 , .plans-container ul{
+    padding: 2rem;
+  }
+  .plan{
+    background-color: rgb(10, 80, 141);
+    gap: 2rem;
+  }
+  .membership-plan{
+    color: white;
+    text-align: center;
+  }
 /* ---------------------------------------- */
 
 /* Mobile responsive styles */
@@ -399,6 +418,9 @@ main{
   .calculator-child{
     width: 100%; 
     padding-bottom: 3rem;
+  }
+  .plans-container{
+    grid-template-columns: repeat(1, 1fr);
   }
 
 }
