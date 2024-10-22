@@ -70,6 +70,7 @@ nav {
   padding: 0 2rem;
   width: 80%;
   margin: 0 auto;
+  gap: 3rem;
 }
 .banner-title {
   width: 50%;
@@ -170,6 +171,35 @@ nav {
     gap: 2rem;
   }
 
+  /* Run extra mile section styles */
+  .run-container{
+    width: 100%;
+    background-color: black;
+    border: 3px solid black;
+  }
+  .run-extra{
+    width: 80%;
+    margin: 6rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    border-radius: 1.5rem;
+    gap: 3rem;
+    background-color: rgb(34, 34, 34);
+    color: white;
+  }
+  .run-content{
+    padding: 2rem;
+  }
+  .run-content > p{
+    padding: 2rem 0;
+  }
+  .run-image{
+    width: 40%;
+    border-radius: 1.5rem;
+  }
+
 /* ---------------------------------------- */
 @media screen and (max-width: 576px) {
     /* Navbar mobile styles */
@@ -199,5 +229,11 @@ nav {
   /* change your habit section */
   .card-section{
     flex-direction: column;
+  }
+  .run-extra{
+    flex-direction: column;
+  }
+  .run-image{
+    width: 100%;
   }
 }
