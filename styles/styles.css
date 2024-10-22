@@ -142,6 +142,10 @@ nav {
   font-weight: bolder;
 }
 
+main{
+    width: 100%;
+    background-color: black;
+}
 /* Change your habit section */
 .change-habit{
     text-align: center;
@@ -167,6 +171,7 @@ nav {
     margin: 0 auto;
     padding: 10px;
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 2rem;
   }
@@ -175,15 +180,13 @@ nav {
   .run-container{
     width: 100%;
     background-color: black;
-    border: 3px solid black;
   }
   .run-extra{
     width: 80%;
     margin: 6rem auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 3rem;
     border-radius: 1.5rem;
     gap: 3rem;
     background-color: rgb(34, 34, 34);
@@ -200,7 +203,44 @@ nav {
     border-radius: 1.5rem;
   }
 
+  /* our team section styles */
+  .our-team{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: black;
+    color: white;
+  }
+  .team-img-container{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    margin: 3rem auto;
+    background-color: rgb(34, 34, 34);
+    border-radius: 1.5rem;
+    padding: 2rem;
+  }
+
+  .team-img-container >  div > img{
+    width: 100%;
+    height: 80%;
+    border-radius: 1.5rem;
+  }
+  .trainer{
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .team-img-content{
+    text-align: left;
+    position: relative;
+    bottom: 3rem;
+    left: 1rem;
+  }
+
+
 /* ---------------------------------------- */
+
+/* Mobile responsive styles */
 @media screen and (max-width: 576px) {
     /* Navbar mobile styles */
   nav {
@@ -235,5 +275,14 @@ nav {
   }
   .run-image{
     width: 100%;
+  }
+
+  /* our team section styles */
+  .team-img-container{
+    padding: 3rem;
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
   }
 }
