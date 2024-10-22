@@ -241,7 +241,9 @@ main{
 
   /* Footer styles */
   footer{
-    background-color: #333;
+      background-color: #333;
+  }
+  .footer-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -260,7 +262,7 @@ main{
   .footer-title{
     color: white;
   }
-  footer li{
+  .footer-container li{
     list-style: none;
   }
   .footer-content{
@@ -274,7 +276,16 @@ main{
   .footer-left{
     width: 50%;
   }
-  
+  hr{
+    width: 80%;
+    margin: 1.5rem auto;
+    border: 1px solid rgb(85, 83, 83);
+  }
+  .copywrite{
+    color: white;
+    text-align: center;
+    padding: 2rem;
+  }
 
 /* ---------------------------------------- */
 
@@ -324,7 +335,7 @@ main{
     grid-template-columns: repeat(1, 1fr); 
   }
   /* Footer styles */
-  footer{
+  .footer-container{
     flex-direction: column;
     gap: 3rem;
     padding: 0;
@@ -334,5 +345,6 @@ main{
   }
   .footer-content{
     flex-direction: column;
+    padding-bottom: 2rem;
   }
 }
